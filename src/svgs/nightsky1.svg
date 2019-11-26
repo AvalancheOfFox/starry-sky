@@ -13,24 +13,36 @@
   </g>
   <path d="M458.21 530.67a178.59 178.59 0 11-156.11-314.6 209.69 209.69 0 00-129.34 42.23c-93 69.89-111.73 201.94-41.84 294.94s201.94 111.72 294.94 41.83a209.65 209.65 0 0076.53-112.49 178 178 0 01-44.18 48.09z" stroke-width=".81" fill="#bfaa11" stroke="#000" stroke-miterlimit="10" id="Moon"/>
   <g id="Stars">
-    <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="8000ms" repeatCount="indefinite"></animate>
-    <path class="cls-3" d="M1104.77 174.28z"/>
-    <path class="cls-3" d="M1045.58 173.78a29.35 29.35 0 0129.34 29.35 29.35 29.35 0 0129.35-29.35 29.35 29.35 0 01-29.35-29.35 29.35 29.35 0 01-29.34 29.35z" transform="translate(.5 .5)"/>
-    <path class="cls-3" d="M1469.06 125.72z"/>
-    <path class="cls-3" d="M1409.86 125.22a29.35 29.35 0 0129.35 29.35 29.35 29.35 0 0129.35-29.35 29.35 29.35 0 01-29.35-29.35 29.35 29.35 0 01-29.35 29.35z" transform="translate(.5 .5)"/>
-    <path class="cls-3" d="M1289.04 290.03z"/>
-    <path class="cls-3" d="M1229.85 289.53a29.35 29.35 0 0129.34 29.34 29.35 29.35 0 0129.35-29.34 29.35 29.35 0 01-29.35-29.35 29.35 29.35 0 01-29.34 29.35z" transform="translate(.5 .5)"/>
-    <path class="cls-4" d="M1725.5 244.97z"/>
-    <path class="cls-4" d="M1634.89 244.47a45.05 45.05 0 0145 45.06 45.06 45.06 0 0145.11-45.06 45.06 45.06 0 01-45.06-45.06 45.05 45.05 0 01-45.05 45.06z" transform="translate(.5 .5)"/>
-    <path class="cls-4" d="M544.16 260.68z"/>
-    <path class="cls-4" d="M453.55 260.18a45.05 45.05 0 0145.05 45.05 45.06 45.06 0 0145.06-45.05 45.06 45.06 0 01-45.06-45.06 45.05 45.05 0 01-45.05 45.06z" transform="translate(.5 .5)"/>
-    <path class="cls-5" d="M1682.72 96.37z"/>
-    <path class="cls-5" d="M1629.06 95.87a26.58 26.58 0 0126.58 26.58 26.58 26.58 0 0126.58-26.58 26.58 26.58 0 01-26.58-26.58 26.58 26.58 0 01-26.58 26.58z" transform="translate(.5 .5)"/>
-    <path class="cls-6" d="M1349.7 652.72z"/>
-    <path class="cls-7" d="M1486.42 404.8a21.4 21.4 0 0121.4 21.39 21.4 21.4 0 0121.4-21.39 21.4 21.4 0 01-21.4-21.4 21.4 21.4 0 01-21.4 21.4z" transform="translate(.5 .5)"/>
-    <path class="cls-6" d="M1349.7 505.9z"/>
-    <path class="cls-7" d="M1486.42 258a21.4 21.4 0 0121.4 21.4 21.4 21.4 0 0121.4-21.4 21.4 21.4 0 01-21.4-21.4 21.4 21.4 0 01-21.4 21.4z" transform="translate(.5 .5)"/>
-    <path class="cls-6" d="M997.17 618.92z"/>
+    <!-- <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="8000ms" repeatCount="indefinite"></animate> -->
+    <g id='starGroup1'>
+    <animate attributeName="fill" from="#B8642D" to="#DEDB1D" dur='5000ms' repeatCount='indefinite'></animate>
+        <path class="cls-3" d="M1104.77 174.28z"/>
+        <path class="cls-3" d="M1045.58 173.78a29.35 29.35 0 0129.34 29.35 29.35 29.35 0 0129.35-29.35 29.35 29.35 0 01-29.35-29.35 29.35 29.35 0 01-29.34 29.35z" transform="translate(.5 .5)"/>
+        <path class="cls-3" d="M1469.06 125.72z"/>
+        <path class="cls-3" d="M1409.86 125.22a29.35 29.35 0 0129.35 29.35 29.35 29.35 0 0129.35-29.35 29.35 29.35 0 01-29.35-29.35 29.35 29.35 0 01-29.35 29.35z" transform="translate(.5 .5)"/>
+        <path class="cls-3" d="M1289.04 290.03z"/>
+        <path class="cls-3" d="M1229.85 289.53a29.35 29.35 0 0129.34 29.34 29.35 29.35 0 0129.35-29.34 29.35 29.35 0 01-29.35-29.35 29.35 29.35 0 01-29.34 29.35z" transform="translate(.5 .5)"/>
+    </g>
+    <g id="starsMoving">
+        <animateTransform 
+            attributeName="transform"
+            attributeType="XML"
+            type="scale"
+            values='1.0; 1.05; 1.0'
+            dur="7s"
+            repeatCount="indefinite"/>
+        <path class="cls-4" d="M1725.5 244.97z"/>
+        <path class="cls-4" d="M1634.89 244.47a45.05 45.05 0 0145 45.06 45.06 45.06 0 0145.11-45.06 45.06 45.06 0 01-45.06-45.06 45.05 45.05 0 01-45.05 45.06z" transform="translate(.5 .5)"/>
+        <path class="cls-4" d="M544.16 260.68z"/>
+        <path class="cls-4" d="M453.55 260.18a45.05 45.05 0 0145.05 45.05 45.06 45.06 0 0145.06-45.05 45.06 45.06 0 01-45.06-45.06 45.05 45.05 0 01-45.05 45.06z" transform="translate(.5 .5)"/>
+        <path class="cls-5" d="M1682.72 96.37z"/>
+        <path class="cls-5" d="M1629.06 95.87a26.58 26.58 0 0126.58 26.58 26.58 26.58 0 0126.58-26.58 26.58 26.58 0 01-26.58-26.58 26.58 26.58 0 01-26.58 26.58z" transform="translate(.5 .5)"/>
+        <path class="cls-6" d="M1349.7 652.72z"/>
+        <path class="cls-7" d="M1486.42 404.8a21.4 21.4 0 0121.4 21.39 21.4 21.4 0 0121.4-21.39 21.4 21.4 0 01-21.4-21.4 21.4 21.4 0 01-21.4 21.4z" transform="translate(.5 .5)"/>
+        <path class="cls-6" d="M1349.7 505.9z"/>
+        <path class="cls-7" d="M1486.42 258a21.4 21.4 0 0121.4 21.4 21.4 21.4 0 0121.4-21.4 21.4 21.4 0 01-21.4-21.4 21.4 21.4 0 01-21.4 21.4z" transform="translate(.5 .5)"/>
+        <path class="cls-6" d="M997.17 618.92z"/>
+    </g>
     <path class="cls-7" d="M1133.89 371a21.4 21.4 0 0121.4 21.4 21.4 21.4 0 0121.4-21.4 21.4 21.4 0 01-21.4-21.39 21.4 21.4 0 01-21.4 21.39z" transform="translate(.5 .5)"/>
     <path class="cls-6" d="M795.3 405.3z"/>
     <path class="cls-7" d="M932 157.37a21.4 21.4 0 0121.4 21.4 21.4 21.4 0 0121.4-21.4 21.4 21.4 0 01-21.4-21.4 21.4 21.4 0 01-21.4 21.4z" transform="translate(.5 .5)"/>
@@ -38,27 +50,29 @@
     <path class="cls-7" d="M1257.6 90.12a21.4 21.4 0 0121.4 21.4 21.4 21.4 0 0121.4-21.4 21.4 21.4 0 01-21.4-21.4 21.4 21.4 0 01-21.4 21.4z" transform="translate(.5 .5)"/>
     <path class="cls-3" d="M824.65 319.37z"/>
     <path class="cls-3" d="M765.45 318.87a29.35 29.35 0 0129.35 29.35 29.35 29.35 0 0129.35-29.35 29.35 29.35 0 01-29.35-29.34 29.35 29.35 0 01-29.35 29.34z" transform="translate(.5 .5)"/>
-    <path class="cls-3" d="M354.22 96.37z"/>
-    <path class="cls-3" d="M295 95.87a29.35 29.35 0 0129.34 29.35 29.35 29.35 0 0129.35-29.35 29.35 29.35 0 01-29.35-29.35A29.35 29.35 0 01295 95.87z" transform="translate(.5 .5)"/>
-    <path class="cls-3" d="M661.55 186.2z"/>
-    <path class="cls-3" d="M602.36 185.7a29.35 29.35 0 0129.35 29.3 29.34 29.34 0 0129.34-29.34 29.34 29.34 0 01-29.34-29.35 29.35 29.35 0 01-29.35 29.39z" transform="translate(.5 .5)"/>
-    <path class="cls-8" d="M939.75 550.88z"/>
-    <path class="cls-8" d="M901.3 550.38a19 19 0 0119 19 19 19 0 0119-19 19 19 0 01-19-19 19 19 0 01-19 19z" transform="translate(.5 .5)"/>
-    <path class="cls-8" d="M710.47 445.67z"/>
-    <path class="cls-8" d="M672 445.17a19 19 0 0119 19 19 19 0 0119-19 19 19 0 01-19-19 19 19 0 01-19 19z" transform="translate(.5 .5)"/>
-    <path class="cls-8" d="M979.47 405.3z"/>
-    <path class="cls-8" d="M941 404.8a19 19 0 0119 19 19 19 0 0119-19 19 19 0 01-19-19 19 19 0 01-19 19z" transform="translate(.5 .5)"/>
-    <path class="cls-8" d="M1694.08 521.53z"/>
-    <path class="cls-8" d="M1655.64 521a19 19 0 0119 19 19 19 0 0119-19 19 19 0 01-19-19 19 19 0 01-19 19z" transform="translate(.5 .5)"/>
-    <path class="cls-8" d="M1834.47 405.3z"/>
+    <g id='starsFadeInOut'>
+        <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="8000ms" repeatCount="indefinite"></animate>
+        <path class="cls-3" d="M354.22 96.37z"/>
+        <path class="cls-3" d="M295 95.87a29.35 29.35 0 0129.34 29.35 29.35 29.35 0 0129.35-29.35 29.35 29.35 0 01-29.35-29.35A29.35 29.35 0 01295 95.87z" transform="translate(.5 .5)"/>
+        <path class="cls-3" d="M661.55 186.2z"/>
+        <path class="cls-3" d="M602.36 185.7a29.35 29.35 0 0129.35 29.3 29.34 29.34 0 0129.34-29.34 29.34 29.34 0 01-29.34-29.35 29.35 29.35 0 01-29.35 29.39z" transform="translate(.5 .5)"/>
+        <path class="cls-8" d="M939.75 550.88z"/>
+        <path class="cls-8" d="M901.3 550.38a19 19 0 0119 19 19 19 0 0119-19 19 19 0 01-19-19 19 19 0 01-19 19z" transform="translate(.5 .5)"/>
+        <path class="cls-8" d="M710.47 445.67z"/>
+        <path class="cls-8" d="M672 445.17a19 19 0 0119 19 19 19 0 0119-19 19 19 0 01-19-19 19 19 0 01-19 19z" transform="translate(.5 .5)"/>
+        <path class="cls-8" d="M979.47 405.3z"/>
+        <path class="cls-8" d="M941 404.8a19 19 0 0119 19 19 19 0 0119-19 19 19 0 01-19-19 19 19 0 01-19 19z" transform="translate(.5 .5)"/>
+        <path class="cls-8" d="M1694.08 521.53z"/>
+        <path class="cls-8" d="M1655.64 521a19 19 0 0119 19 19 19 0 0119-19 19 19 0 01-19-19 19 19 0 01-19 19z" transform="translate(.5 .5)"/>
+        <path class="cls-8" d="M1834.47 405.3z"/>
+    </g>
     <path class="cls-8" d="M1796 404.8a19 19 0 0119 19 19 19 0 0119-19 19 19 0 01-19-19 19 19 0 01-19 19z" transform="translate(.5 .5)"/>
   </g>
   <g id="Building1">
     <path id="Building" class="cls-9" d="M.5 664.78h153v415.72H.5z"/>
-    <g id='lights'>
-    <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="3000ms" repeatCount="indefinite"></animate>
-
-    <path class="cls-10" d="M15.5 684.5h34v34h-34zM60 684.5h34v34H60zM104 684.5h34v34h-34zM15.5 727.14h34v34h-34zM60 727.14h34v34H60zM104 727.14h34v34h-34zM15.5 773.14h34v34h-34zM60 773.14h34v34H60zM104 773.14h34v34h-34zM15.75 819.14h34v34h-34zM60.25 819.14h34v34h-34zM104.25 819.14h34v34h-34zM16 865.14h34v34H16zM60.5 865.14h34v34h-34zM104.5 865.14h34v34h-34zM15.5 911.14h34v34h-34zM60 911.14h34v34H60zM104 911.14h34v34h-34zM15.5 957.14h34v34h-34zM60 957.14h34v34H60zM104 957.14h34v34h-34z"/>
+    <g id='lightsBuilding1'>
+        <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="3000ms" repeatCount="indefinite"></animate>
+        <path class="cls-10" d="M15.5 684.5h34v34h-34zM60 684.5h34v34H60zM104 684.5h34v34h-34zM15.5 727.14h34v34h-34zM60 727.14h34v34H60zM104 727.14h34v34h-34zM15.5 773.14h34v34h-34zM60 773.14h34v34H60zM104 773.14h34v34h-34zM15.75 819.14h34v34h-34zM60.25 819.14h34v34h-34zM104.25 819.14h34v34h-34zM16 865.14h34v34H16zM60.5 865.14h34v34h-34zM104.5 865.14h34v34h-34zM15.5 911.14h34v34h-34zM60 911.14h34v34H60zM104 911.14h34v34h-34zM15.5 957.14h34v34h-34zM60 957.14h34v34H60zM104 957.14h34v34h-34z"/>
     </g>
   </g>
   <g id="Building2">
