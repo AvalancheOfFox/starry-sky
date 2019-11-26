@@ -55,8 +55,11 @@
   </g>
   <g id="Building1">
     <path id="Building" class="cls-9" d="M.5 664.78h153v415.72H.5z"/>
-    
+    <g id='lights'>
+    <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="3000ms" repeatCount="indefinite"></animate>
+
     <path class="cls-10" d="M15.5 684.5h34v34h-34zM60 684.5h34v34H60zM104 684.5h34v34h-34zM15.5 727.14h34v34h-34zM60 727.14h34v34H60zM104 727.14h34v34h-34zM15.5 773.14h34v34h-34zM60 773.14h34v34H60zM104 773.14h34v34h-34zM15.75 819.14h34v34h-34zM60.25 819.14h34v34h-34zM104.25 819.14h34v34h-34zM16 865.14h34v34H16zM60.5 865.14h34v34h-34zM104.5 865.14h34v34h-34zM15.5 911.14h34v34h-34zM60 911.14h34v34H60zM104 911.14h34v34h-34zM15.5 957.14h34v34h-34zM60 957.14h34v34H60zM104 957.14h34v34h-34z"/>
+    </g>
   </g>
   <g id="Building2">
     <path stroke-width=".72" stroke="#000" stroke-miterlimit="10" d="M153.5 845.9h153v234.6h-153z"/>
