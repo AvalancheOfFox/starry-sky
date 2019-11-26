@@ -6,7 +6,6 @@ import sky from '../src/svgs/nightsky1.svg'
 function App() {
   return (
     <div className="App">
-      <button className='testbutt'>TEST</button>
       <img src={sky}></img>
     </div>
   );
