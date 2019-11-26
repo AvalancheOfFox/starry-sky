@@ -11,12 +11,16 @@
   <g id="SkyBG">
     <path id="SkyBG-2" data-name="SkyBG" fill="url(#linear-gradient)" stroke="#000" stroke-miterlimit="10" d="M.5.5h1920v1080H.5z"/>
   </g>
-  <path d="M458.21 530.67a178.59 178.59 0 11-156.11-314.6 209.69 209.69 0 00-129.34 42.23c-93 69.89-111.73 201.94-41.84 294.94s201.94 111.72 294.94 41.83a209.65 209.65 0 0076.53-112.49 178 178 0 01-44.18 48.09z" stroke-width=".81" fill="#bfaa11" stroke="#000" stroke-miterlimit="10" id="Moon"/>
+  <g id='moon'>
+    <path d="M458.21 530.67a178.59 178.59 0 11-156.11-314.6 209.69 209.69 0 00-129.34 42.23c-93 69.89-111.73 201.94-41.84 294.94s201.94 111.72 294.94 41.83a209.65 209.65 0 0076.53-112.49 178 178 0 01-44.18 48.09z" stroke-width=".81" fill="#bfaa11" stroke="#000" stroke-miterlimit="10" id="Moon">
+    <animate attributeName="fill" values="#bfaa11;#b8642d;#dedb1d;#bfaa11" dur="10s" repeatCount="indefinite" />
+    </path>
+  </g>
   <g id="Stars">
     <g id='starGroup1'>
     <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="2000ms" repeatCount="indefinite"></animate>
     <animate
-    attributeName="fill"
+    attributeName="stroke"
     values="#B8642D;#DEDB1D;#B8642D"
     dur="5000ms"
     repeatCount="indefinite" />
@@ -28,7 +32,11 @@
         <path class="cls-3" d="M1229.85 289.53a29.35 29.35 0 0129.34 29.34 29.35 29.35 0 0129.35-29.34 29.35 29.35 0 01-29.35-29.35 29.35 29.35 0 01-29.34 29.35z" transform="translate(.5 .5)"/>
     </g>
     <g id="starsMoving">
-        <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="14s" repeatCount="indefinite"></animate>
+        <animate
+        attributeName="opacity"
+        values="0.0; 0.5; 1; 0.5; 0.0"
+        dur="14s"
+        repeatCount="indefinite" />
         <animateTransform 
             attributeName="transform"
             attributeType="XML"
@@ -49,7 +57,6 @@
         <path class="cls-6" d="M997.17 618.92z"/>
     </g>
     <g id='starsColorChange'>
-        <animate attributeName="fill" values="#B8642D;#FFFFFF;purple" dur="10s" repeatCount="indefinite" />
         <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="5000ms" repeatCount="indefinite"></animate>
 
         <path class="cls-7" d="M1133.89 371a21.4 21.4 0 0121.4 21.4 21.4 21.4 0 0121.4-21.4 21.4 21.4 0 01-21.4-21.39 21.4 21.4 0 01-21.4 21.39z" transform="translate(.5 .5)"/>
@@ -62,7 +69,8 @@
     </g>
     <g id='starsFadeInOut'>
         <animate attributeName="opacity" values="0.0; 0.5; 1; 0.5; 0.0" dur="8000ms" repeatCount="indefinite"></animate>
-        <path class="cls-3" d="M354.22 96.37z"/>
+        <path class="cls-3" d="M354.22 96.37z">    <animate attributeName="fill" values="#bfaa11;#b8642d;#dedb1d;#bfaa11" dur="5s" repeatCount="indefinite" />
+</path>
         <path class="cls-3" d="M295 95.87a29.35 29.35 0 0129.34 29.35 29.35 29.35 0 0129.35-29.35 29.35 29.35 0 01-29.35-29.35A29.35 29.35 0 01295 95.87z" transform="translate(.5 .5)"/>
         <path class="cls-3" d="M661.55 186.2z"/>
         <path class="cls-3" d="M602.36 185.7a29.35 29.35 0 0129.35 29.3 29.34 29.34 0 0129.34-29.34 29.34 29.34 0 01-29.34-29.35 29.35 29.35 0 01-29.35 29.39z" transform="translate(.5 .5)"/>
@@ -86,6 +94,7 @@
     </g>
   </g>
   <g id="Building2">
+  
     <path stroke-width=".72" stroke="#000" stroke-miterlimit="10" d="M153.5 845.9h153v234.6h-153z"/>
     <path class="cls-10" d="M168.75 957.14h34v34h-34zM213.25 957.14h34v34h-34zM257.25 957.14h34v34h-34zM168.75 911.14h34v34h-34zM213.25 911.14h34v34h-34zM257.25 911.14h34v34h-34zM168.75 865.14h34v34h-34zM213.25 865.14h34v34h-34zM257.25 865.14h34v34h-34z"/>
   </g>
